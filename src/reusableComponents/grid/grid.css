@@ -1,0 +1,13 @@
+.grid_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width: 700px) {
+    .grid_cont {
+        grid-template-columns: 1fr 1fr;
+    }
+}
