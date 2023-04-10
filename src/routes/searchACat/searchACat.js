@@ -110,11 +110,8 @@ function SearchACat(props) {
                         <div className='search_icon cp hl' onClick={searchCatFnc}><FontAwesomeIcon icon={faMagnifyingGlass} /></div>
                     </div>
                 </div>
-                <div className='search_a_cat_main_cont p-2 mt-2 text-white' style={{ minHeight: "700px" }}>
-                    <div className='search_cat_cont d-flex flex-wrap gap-2 p-2'>
-
-                    </div>
-                    <div className='search_a_cat_img'></div>
+                <div className='search_a_cat_main_cont p-2 mt-2 text-white'>
+                    <div className='search_cat_cont d-flex flex-wrap gap-2 p-2 justify-content-center'></div>
                 </div>
 
             </div>

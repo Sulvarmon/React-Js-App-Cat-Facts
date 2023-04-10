@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./grid.css"
+import ACat from '../aCat/aCat';
 
 function Grid(props) {
     const [catsData, setcatsData] = useState([])
@@ -22,18 +23,14 @@ function Grid(props) {
                 catsData.length ? (
                     <div className='text-white mt-5 p-2 bbt'  >
                         <div className='h2 text-center text-warning' style={{ letterSpacing: "10px" }}>{props.title}</div>
-                        <div className='grid_cont mt-5'>
-                            {grid.map((item, index) => (
-                                <div key={index} className='d-flex flex-column gap-2 p-2 align-items-center border rounded'>
-                                    <div className='text-info'>{eval(props.name)}</div>
-                                    <img src={`https://cdn2.thecatapi.com/images/${catsData[item].reference_image_id}.jpg`} width="200px" height="200px" />
-                                    <div>
-                                        <div><b className='text-warning'>Temperament :</b> {eval(props.info1)}</div>
-                                        <div className='mt-2'><b className='text-warning'>Description :</b> {eval(props.info2)}</div>
+                        <div className='d-flex justify-content-center'>
+                            <div className='grid_cont mt-5 border rounded'>
+                                {grid.map((item, index) => (
+                                    <div key={index}>
+                                        <ACat name={catsData[item].name} img={catsData[item].reference_image_id} origin={catsData[item].origin} temperament={catsData[item].temperament} lifeSpan={catsData[item].life_span} description={catsData[item].description} wiki={catsData[item].wikipedia_url} />
                                     </div>
-                                    <div><a target="_blank" rel="noreferrer" href={catsData[item].wikipedia_url}>Aditional Information</a></div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ) : (

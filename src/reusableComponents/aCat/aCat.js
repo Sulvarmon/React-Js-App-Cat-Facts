@@ -2,7 +2,7 @@ import React from 'react';
 
 function ACat(props) {
     return (
-        <div className='d-flex flex-column m-4 p-2 align-items-center border rounded' style={{ position: "relative", zIndex: "10", width: "250px" }}>
+        <div className='d-flex flex-column m-4 p-2 align-items-center border border-secondary rounded' style={{ position: "relative", zIndex: "10", width: "250px" }}>
             <div className='text-info mb-2'>{props.name}</div>
             <img className='mb-3' src={`https://cdn2.thecatapi.com/images/${props.img}.jpg`} width="200px" height="200px" />
             <div className='d-flex flex-column gap-3'>
