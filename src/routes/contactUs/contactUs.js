@@ -7,7 +7,7 @@ function ContactUs(props) {
             <Header />
             <div className='text-white d-flex flex-column align-items-center  p-2 gap-2 bbt mt-2'>
                 <div className='h1 text-warning'>Contacts</div>
-                <form action='#' className='d-flex flex-column align-items-center'>
+                <form action='/' className='d-flex flex-column align-items-center'>
                     <div className='border d-flex flex-column align-items-center gap-2 p-2 '>
                         <div className='text-warning '>Contact Information</div>
                         <div className='d-flex flex-column align-items-end gap-2'>
