@@ -11,7 +11,7 @@ function ACat(props) {
                 <div><b className='text-warning'>Life Span :</b> {props.lifeSpan}</div>
                 <div><b className='text-warning'>Description :</b> {props.description}</div>
             </div>
-            <div className='mt-3'><a target="_blank" rel="noreferrer" href={props.wiki}>Aditional Information</a></div>
+            <div className='btn btn-primary mt-2'><a target="_blank" rel="noreferrer" href={props.wiki}>Aditional Information</a></div>
         </div>
     );
 }

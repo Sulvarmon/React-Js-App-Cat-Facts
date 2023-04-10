@@ -38,6 +38,7 @@ function Header() {
         <div className="position-relative g-0 mt-2 rounded">
             <div className='text-white d-flex justify-content-between align-items-center p-2 gap-2 bbt'>
                 <Link to="/" ><div className="logo"><img className="border rounded-circle user-select-none" src={logo} width="100px" height="100px" /></div></Link>
+                <div className="btn btn-primary"><Link to='/searchACat' >Search A Cat</Link> </div>
                 <div className="cp" onClick={changeSlideState}><FontAwesomeIcon icon={faBars} size="2x" /></div>
             </div>
             <div className="slideMenu text-white rounded bbt">

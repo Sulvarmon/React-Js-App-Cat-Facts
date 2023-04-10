@@ -30,7 +30,7 @@ function RandomCats(props) {
         <div className='container text-white p-2 mt-2 d-flex justify-content-center align-items-center rounded bbt'>
             {catsData.length ? (
                 <div className='d-flex flex-column justify-content-center align-items-center gap-2'>
-                    <button className='p-2 rounded text-primary' onClick={() => clicks ? setClics(false) : setClics(true)}>Random Cat</button>
+                    <button className='btn btn-primary' onClick={() => clicks ? setClics(false) : setClics(true)}>Random Cat</button>
                     <img src={`https://cdn2.thecatapi.com/images/${catsData[randomNum].reference_image_id}.jpg`} width="200px" height="200px" />
                     <div>{catsData[randomNum].name}</div>
                     <div><a target='_blank' rel="noreferrer" href={catsData[randomNum].wikipedia_url}>Aditional Information</a></div>
