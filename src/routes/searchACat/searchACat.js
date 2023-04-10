@@ -92,7 +92,7 @@ function SearchACat(props) {
     return (
         <div className='container-md g-0 overflow-hidden' >
             <Header />
-            <div className='text-white d-flex flex-column  align-items-center p-2 gap-2 bbt mt-2'>
+            <div className='text-white d-flex flex-column align-items-center p-2 gap-2 bbt mt-2'>
                 <div className='h1 text-warning'>Search A Cat</div>
                 <div className='d-flex flex-column align-items-center flex column gap-2 p-2 mt-2 border'>
                     <div className='d-flex gap-2 p-2'>
